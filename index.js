@@ -4,10 +4,12 @@ let alumnos = [{nombre:'Jorge Chi', matricula:'A15003408'},
 {nombre:'George Lion', matricula:'A15003404'},
 ];
 
-app.get('/', (req, res ) => 
+app.get('/alumnos', (req, res ) => 
     res.json(alumnos) 
 );
 
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`app listening on http://localhost:${port}`) );
+
+module.exports = app;
