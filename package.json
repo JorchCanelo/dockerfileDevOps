@@ -5,17 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "index.test.js"
+    "test": "jest"
   },
-  "author": "Jorge Chi",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-    
   },
   "devDependencies": {
     "jest": "^29.5.0",
     "supertest": "^6.3.3"
   }
-  
 }

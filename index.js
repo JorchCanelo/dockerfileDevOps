@@ -1,15 +1,18 @@
-const app = require('express')();
-let alumnos = [{nombre:'Jorge Chi', matricula:'A15003408'},
-{nombre:'Alberto Leon', matricula:'A15003407'},
-{nombre:'George Lion', matricula:'A15003404'},
+const express = require('express');
+const app = express();
+
+const puerto = process.env.PORT || 5000;
+
+var estudiantes = [
+	{nombre:'Jesus', matricula:'a16001674'},
+	{nombre:'Juan', matricula:'a16001675'},
+	{nombre:'Pedro', matricula:'a16001676'},
 ];
 
-app.get('/alumnos', (req, res ) => 
-    res.json(alumnos) 
+app.get('/estudiantes', (req, res) =>
+	res.json(estudiantes)
 );
 
-const port = process.env.PORT || 5000;
-
-app.listen(port, () => console.log(`app listening on http://localhost:${port}`) );
+app.listen(puerto, () => console.log(`app listening on http://localhost:${puerto}`) );
 
 module.exports = app;
