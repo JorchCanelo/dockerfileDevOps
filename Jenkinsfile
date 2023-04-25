@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Clonar repositorio') {
       steps {
-        git branch: 'master', url: 'https://github.com/Kanin-020/Dockerfile.git'
+        git branch: 'main', url: 'https://github.com/Kanin-020/Dockerfile.git'
       }
     }
     stage('Instalar dependencias') {
